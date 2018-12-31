@@ -1,0 +1,67 @@
+body {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 300;
+   user-select: none;
+}
+
+#bg-image { 
+    mask: url(#mask1);
+    filter: url(#blurFilter);
+}
+
+.trans {
+    stroke:none; 
+    fill: #ffffff;
+    color: white;
+    font-weight: 400;
+    /*transition: fill 40ms linear, color 40ms linear, font-weight 40ms linear;
+    -webkit-transform: translateZ(0);*/
+}
+
+.opaque {
+    stroke:none; 
+    fill: #222222;
+    color: black;
+    font-weight: 300;
+    /*transition: fill 400ms linear, color 400ms linear, font-weight 400ms linear;
+    -webkit-transform: translateZ(0);*/  
+}
+
+.colored {
+    background-color: red;
+}
+
+#numpad {
+    position:absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 75%;
+}
+
+.row {
+    margin-left: 8.6%;
+    margin-right: 8.4%;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.num {
+    display: inline-block;
+    padding: 6px 26px 22px 28px;
+    margin: 2.6%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-size: 2em;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.num .decimal {
+    position: relative;
+    top: -12px;
+    left: 4px;
+}

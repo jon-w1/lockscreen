@@ -1,0 +1,9 @@
+{
+  "firebase": "budget14",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    ".*",
+    "**/node_modules/**"
+  ]
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="lockscreen.js"></script>
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+    <link rel="stylesheet" type="text/css" href="lockscreen.css"></link>
+  </head>
+  <body>
+    <div style="width:320px; height: 480px; position:relative;">
+      <svg width="100%" height="100%">
+          <image xlink:href="flower.jpg" x="-20%" y="0" height="100%" width="220%" id="bg-image"/>
+          <defs>
+            <mask id="mask1" x="0" y="0" width="100%" height="100%" >
+                <rect x="0" y="0" width="100%" height="100%" class="opaque"/>
+                <circle cx="22%" cy="35%" r="9%" class="trans"/>
+                <circle cx="22%" cy="35%" r="8.7%" class="opaque"/>
+                <circle cx="50%" cy="35%" r="9%" class="trans"/>
+                <circle cx="50%" cy="35%" r="8.7%" class="opaque"/>
+                <circle cx="78%" cy="35%" r="9%" class="trans"/>
+                <circle cx="78%" cy="35%" r="8.7%" class="opaque"/>
+                <circle cx="22%" cy="53%" r="9%" class="trans"/>
+                <circle cx="22%" cy="53%" r="8.7%" class="opaque"/>
+                <circle cx="50%" cy="53%" r="9%" class="trans"/>
+                <circle cx="50%" cy="53%" r="8.7%" class="opaque"/>
+                <circle cx="78%" cy="53%" r="9%" class="trans"/>
+                <circle cx="78%" cy="53%" r="8.7%" class="opaque"/>
+                <circle cx="22%" cy="71%" r="9%" class="trans"/>
+                <circle cx="22%" cy="71%" r="8.7%" class="opaque"/>
+                <circle cx="50%" cy="71%" r="9%" class="trans"/>
+                <circle cx="50%" cy="71%" r="8.7%" class="opaque"/>
+                <circle cx="78%" cy="71%" r="9%" class="trans"/>
+                <circle cx="78%" cy="71%" r="8.7%" class="opaque"/>
+                <circle cx="22%" cy="89%" r="9%" class="trans"/>
+                <circle cx="22%" cy="89%" r="8.7%" class="opaque"/>
+                <circle cx="50%" cy="89%" r="9%" class="trans"/>
+                <circle cx="50%" cy="89%" r="8.7%" class="opaque"/>
+                <circle cx="78%" cy="89%" r="9%" class="trans"/>
+                <circle cx="78%" cy="89%" r="8.7%" class="opaque"/>
+            </mask>
+            <filter id="blurFilter" x="0" y="0">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="20"/>
+            </filter>
+          </defs>
+      </svg>
+      <div id="numpad">
+          <div class="row">
+              <div class="num opaque" value="1">1</div>
+              <div class="num opaque" value="3">2</div>
+              <div class="num opaque" value="5">3</div>
+          </div>
+          <div class="row">
+              <div class="num opaque" value="7">4</div>
+              <div class="num opaque" value="9">5</div>
+              <div class="num opaque" value="11">6</div>
+          </div>
+          <div class="row">
+              <div class="num opaque" value="13">7</div>
+              <div class="num opaque" value="15">8</div>
+              <div class="num opaque" value="17">9</div>
+          </div>
+          <div class="row">
+              <div class="num opaque" value="19" style="padding-left:17px;padding-right:16px;">+/-</div>
+              <div class="num opaque" value="21">0</div>
+              <div class="num opaque" value="23"><div class="decimal">.</div></div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
